@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imac M1 chip</title>
+
+    <!-- Tailwind Css FrameWork Link  -->
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Custom Css File  -->
+
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+
+<body>
+    <header>
+
+
+    </header>
+
+    <main>
+        <!-- header section start -->
+        <section class="w-50 mx-auto m-10">
+            <div class=" grid grid-cols-2 gap-10">
+
+                <!-- -------------------mac image add  ----------------------->
+
+                <div class="my-5 ">
+                    <img class="w-3/4 mx-auto" src="./images/mac.png" alt="">
+                </div>
+
+                <!--------------------- mac description  ------------------- -->
+                <div>
+                    <h2 class="text-3xl font-semibold">Customized your Blue 24-inch <br> iMac with Apple M1 chip.</h2>
+                    <p class="text-1xl mt-4">Apple M1 chip with 8-core CPU with 4 performace cores and 4 efficiency <br>
+                        cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB <br>
+                        SSD storege Two Thunderbolt/ USB 4 ports Magic Mouse Magic Keyboard - <br>
+                        Us English
+                    </p>
+
+                    <!----------------------- memory section  ---------------------->
+                    <div>
+                        <h3 class="text-2xl font-medium mt-10 mb-2">Memory</h3>
+
+                    </div>
+                    <div class="inline-flex gap-2 ">
+                        <div>
+                            <button id="8GB-memory" class="border border-gray-500 hover:bg-gray-400  p-2 rounded">8GB
+                                unified
+                                memory</button>
+                        </div>
+                        <div>
+                            <button id="16gb" class="border border-gray-500 hover:bg-gray-400 p-2 rounded">16GB unified
+                                memory</button>
+                        </div>
+                    </div>
+
+                    <!----------------------- storage option ---------------------->
+
+                    <div>
+                        <h3 class="text-2xl font-medium mt-8 mb-2">Storage</h3>
+
+                    </div>
+
+                    <div class="inline-flex gap-2">
+                        <div>
+                            <button id="256GB-ssd" class="border border-gray-500 hover:bg-gray-400  p-2 rounded">256GB
+                                SSD Storage
+                            </button>
+                        </div>
+                        <div>
+                            <button id="512GB-ssd" class="border border-gray-500 hover:bg-gray-400 p-2 rounded">512GB
+                                SSD
+                                Storage</button>
+                        </div>
+                        <div>
+                            <button id="1tb-ssdstorage" class="border border-gray-500 hover:bg-gray-400 p-2 rounded">1TB
+                                SSD
+                                Storage</button>
+                        </div>
+
+                    </div>
+
+                    <!----------------------- chose delevery time  ---------------------->
+
+                    <div>
+                        <h3 class="text-2xl font-medium mt-8 mb-2">Choose your delivery option</h3>
+
+                    </div>
+
+                    <div class="inline-flex gap-2">
+                        <div>
+                            <button id="delivery" class="border border-gray-500 hover:bg-gray-400  p-2 rounded">Friday,
+                                25 August FREE
+                                Prime Delivery</button>
+                        </div>
+                        <div>
+                            <button id="second-delivery"
+                                class="border border-gray-500 hover:bg-gray-400 p-2 rounded">Friday, 21 August
+                                Delivery Charge $20</button>
+                        </div>
+                    </div>
+
+
+                    <!--------------------- product  price -------------- -->
+
+
+                    <table class="mt-12 mb-5 font-bold ">
+
+                        <tr class="border-b-2">
+                            <td>Best Price</td>
+                            <td>$<span id="best-price">1299</span></td>
+                        </tr>
+                        <tr class="border-b-2">
+                            <td>Extra Memory Cost</td>
+                            <td>$<span class="memory_cost" id="memory-cost">0</span></td>
+                        </tr>
+                        <tr class="border-b-2">
+                            <td>Extra Storage Cost</td>
+                            <td>$<span class="storage_cost" id="storage-cost">0</span></td>
+                        </tr>
+                        <tr class="border-b-2 border-black">
+                            <td>Delivary Charge</td>
+                            <td>$<span class="delivery_cost" id="delivery-cost">0</span></td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>$<span id="total-price" class="total-price">0</span></td>
+                        </tr>
+                    </table>
+                    <!--------------------- product  price close -------------- -->
+
+
+
+
+                    <!---------------------- promo--code bar  start---------------------->
+
+                    <div class="mb-2">
+                        <label class="block font-medium text-xl" for="clickable">Add Promo Code</label>
+                        <input id="promo-code" class="input_promo_code rounded p-1 border-2 border-black mt-1"
+                            type="text" placeholder="Add Promo Code">
+                        <button id="apply-btn"
+                            class=" bg-red-600 hover:bg-gray-400 text-white font-medium px-3 py-1.5 rounded inline-flex promo_btn">
+                            Apply
+                        </button>
+                        <p class="wrong_promo_code text-red-500"></p>
+                    </div>
+
+                </div>
+        </section>
+
+
+        <!---------------- Total Price ---------------------->
+
+
+        <section>
+            <hr class=" mt-5 mx-24">
+            <h3 class="text-3xl font-semibold text-center mb-10 p-5">TOTAL:$ <span id="in-total">1299</span></h3>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- main section end  -->
+
+
+    <!-- footer section start -->
+    <footer>
+
+
+
+    </footer>
+
+    <!-- javaScript File  -->
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
